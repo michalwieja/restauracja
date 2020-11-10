@@ -59,7 +59,7 @@
         <button>join us</button>
       </div>
     </div>
-    <div class="numbers">
+    <div class="blue">
       <div class="bg">
         <!-- <img src="@/assets/img/Rectangle.png" alt="" /> -->
       </div>
@@ -133,39 +133,12 @@
         </div>
       </div>
     </div>
-    <div class="gallery">
-      <div class="title">Galeria zdjęć</div>
-      <p>
-        Excepteur sint occaecat cupidatat non proident sunt iculpa qui officia
-        deserunt mollit anim est. laborum sed perspiciatis unde omnis natus
-        error sit voluptatem accusantium dolor
-      </p>
-      <div class="images">
-        <div class="image">
-          <img src="@/assets/img/Rectangle-6.png" alt="" />
-        </div>
-        <div class="image">
-          <img src="@/assets/img/Rectangle-6.png" alt="" />
-        </div>
-        <div class="image">
-          <img src="@/assets/img/Rectangle-6.png" alt="" />
-        </div>
-        <div class="image">
-          <img src="@/assets/img/Rectangle-6.png" alt="" />
-        </div>
-        <div class="image">
-          <img src="@/assets/img/Rectangle-6.png" alt="" />
-        </div>
-        <div class="image">
-          <img src="@/assets/img/Rectangle-6.png" alt="" />
-        </div>
-      </div>
-      <button>Zobacz więcej zdjęć</button>
-    </div>
+    <Gallery />
   </div>
 </template>
 
 <script>
+import Gallery from "@/components/Gallery";
 export default {};
 </script>
 
@@ -199,28 +172,6 @@ export default {};
   }
 }
 
-.cards {
-  margin-top: 15vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  .card {
-    height: 200px;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    .title {
-      font-size: 24px;
-      font-weight: bold;
-    }
-    p {
-      font-size: 16px;
-    }
-  }
-}
-
 .meet {
   margin-top: 15vh;
   display: flex;
@@ -247,61 +198,6 @@ export default {};
   }
 }
 
-.numbers {
-  margin-top: 10vh;
-  color: white;
-  .bg {
-    background: url("~assets/img/Rectangle.png");
-    background-position: center;
-    height: 608px;
-
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    right: 0;
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 100%;
-      background-color: $blue;
-      opacity: 0.86;
-    }
-  }
-
-  .content {
-    display: flex;
-    flex-direction: column;
-    height: 608px;
-    justify-content: space-evenly;
-    .title {
-      text-align: center;
-      font-size: 40px;
-      font-family: "poppins";
-      font-weight: bold;
-    }
-    .cards {
-      margin-top: 0;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      .card {
-        width: 300px;
-        color: white;
-        .title {
-          font-size: 50px;
-          font-weight: bold;
-        }
-
-        p {
-          font-size: 22px;
-        }
-      }
-    }
-  }
-}
 .news {
   margin-top: 10vh;
   height: 840px;
@@ -334,37 +230,6 @@ export default {};
       .title {
         font-size: 30px;
         text-align: left;
-      }
-    }
-  }
-}
-
-.gallery {
-  margin-top: 10vh;
-  height: 900px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  .title {
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-  }
-  p {
-    font-family: "poppins";
-  }
-  .images {
-    overflow: hidden;
-    display: grid;
-    grid-template: "1fr 1fr 1fr";
-    grid-gap: 30px;
-
-    justify-content: space-between;
-    .image {
-      width: 350px;
-      img {
-        width: 100%;
       }
     }
   }

@@ -71,6 +71,95 @@ button.small {
   top: 0;
   left: 0;
 }
+.cards {
+  margin-top: 15vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .card {
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}
+.pageTitle {
+  margin-top: 10vh;
+  background: $dark-red;
+  width: 695px;
+  height: 127px;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 50px;
+}
+.blue {
+  margin-top: 10vh;
+  color: white;
+  .bg {
+    background: url("~assets/img/Rectangle.png");
+    background-position: center;
+    height: 608px;
+
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      background-color: $blue;
+      opacity: 0.86;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    height: 608px;
+    justify-content: space-evenly;
+    .title {
+      text-align: center;
+      font-size: 40px;
+      font-family: "poppins";
+      font-weight: bold;
+    }
+    .cards {
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .card {
+        width: 300px;
+        color: white;
+        .title {
+          font-size: 50px;
+          font-weight: bold;
+        }
+
+        p {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
 </style>
 
 

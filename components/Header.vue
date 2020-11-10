@@ -10,7 +10,7 @@
         <nav>
           <ul class="nav-links">
             <li><NuxtLink class="nav-link" to="/">Home</NuxtLink></li>
-            <li><NuxtLink class="nav-link" to="/">O nas</NuxtLink></li>
+            <li><NuxtLink class="nav-link" to="/about">O nas</NuxtLink></li>
             <li><NuxtLink class="nav-link" to="/">Oferta</NuxtLink></li>
             <li><NuxtLink class="nav-link" to="/">Galeria</NuxtLink></li>
             <li><NuxtLink class="nav-link" to="/">Blog</NuxtLink></li>
