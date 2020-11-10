@@ -11,7 +11,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap");
 html {
   font-family: "Josefin Sans", sans-serif;
@@ -29,6 +29,7 @@ html {
 *::after {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 .wrapper {
   width: 1100px;
@@ -36,6 +37,26 @@ html {
 }
 .dark-red {
   color: $dark-red;
+}
+h1 {
+  color: $blue;
+  font-size: 60px;
+}
+button {
+  width: 255px;
+  height: 70px;
+  border: none;
+  background-color: $dark-red;
+  color: white;
+  border-radius: 5px;
+}
+.block {
+  width: 154px;
+  height: 220px;
+  background-color: $blue;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 </style>
 
