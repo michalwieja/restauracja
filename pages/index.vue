@@ -15,6 +15,32 @@
         <div class="block"></div>
       </div>
     </div>
+    <div class="cards">
+      <div class="card">
+        <div class="icon"><img src="@/assets/img/fast-food.png" alt="" /></div>
+        <div class="title">Ochrona zdrowia</div>
+        <p>
+          Etiam maximus, justo ut pellentesque egestas, erat sapien mollis
+          massa, nec porta nisl quam eu arcu. Donec sit amet congue lectus
+        </p>
+      </div>
+      <div class="card">
+        <div class="icon"><img src="@/assets/img/fast-food.png" alt="" /></div>
+        <div class="title">Satysfakcja pacjenta</div>
+        <p>
+          Etiam maximus, justo ut pellentesque egestas, erat sapien mollis
+          massa, nec porta nisl quam eu arcu. Donec sit amet congue lectus
+        </p>
+      </div>
+      <div class="card">
+        <div class="icon"><img src="@/assets/img/fast-food.png" alt="" /></div>
+        <div class="title">Profesjonalny zespół</div>
+        <p>
+          Etiam maximus, justo ut pellentesque egestas, erat sapien mollis
+          massa, nec porta nisl quam eu arcu. Donec sit amet congue lectus
+        </p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -48,5 +74,27 @@ export default {};
 .block {
   top: -110px;
   left: 100px;
+}
+
+.cards {
+  margin-top: 15vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card {
+  height: 200px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 16px;
+  }
 }
 </style>
