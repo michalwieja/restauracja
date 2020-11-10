@@ -41,6 +41,24 @@
         </p>
       </div>
     </div>
+    <div class="meet">
+      <div class="img">
+        <img src="@/assets/img/Rectangle-1.png" alt="" />
+        <div class="block"></div>
+      </div>
+      <div class="content">
+        <div class="title">Meet cool new people over the world</div>
+        <p>
+          Excepteur sint occaecat cupidatat non proident sunt iculpa qui officia
+          deserunt mollit anim est. laborum sed perspiciatis unde omnis natus
+          error sit voluptatem accusantium dolore mque laudantium totam rem
+          aperiam. Dicta sunt explicabo. nemo enim ipsam voluptatem quia magni
+          voluptassit aspernatur aut odit aut fugit sed quia consequuntur magni
+          dolores eos.
+        </p>
+        <button>join us</button>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -49,31 +67,33 @@ export default {};
 </script>
 
 <style lang='scss' scoped>
-.img {
-  position: relative;
-  width: 895px;
-  height: 646px;
-}
 .bestPizza {
   margin-top: 10vh;
   width: 100%;
   display: flex;
   align-items: center;
   position: relative;
-}
-.content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex: 0 0 auto;
-  margin-right: 100px;
-  height: 425px;
-  width: 550px;
-}
-.block {
-  top: -110px;
-  left: 100px;
+
+  .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 0 auto;
+    margin-right: 100px;
+    height: 425px;
+    width: 550px;
+  }
+
+  .img {
+    position: relative;
+    width: 895px;
+    height: 646px;
+    .block {
+      top: -110px;
+      left: 100px;
+    }
+  }
 }
 
 .cards {
@@ -81,20 +101,46 @@ export default {};
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-.card {
-  height: 200px;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  .title {
-    font-size: 24px;
-    font-weight: bold;
+  .card {
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 16px;
+    }
   }
-  p {
-    font-size: 16px;
+}
+
+.meet {
+  margin-top: 15vh;
+  display: flex;
+  justify-content: space-between;
+  .img {
+    .block {
+      width: 100%;
+      height: 100%;
+      top: -550px;
+      left: 50px;
+      z-index: -1;
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+    height: 390px;
+    .title {
+      font-size: 40px;
+      font-weight: bold;
+    }
   }
 }
 </style>
