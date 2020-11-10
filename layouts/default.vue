@@ -2,12 +2,14 @@
   <div>
     <Header />
     <Nuxt />
+    <Footer />
   </div>
 </template>
 <script>
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 export default {
-  components: { Header },
+  components: { Header, Footer },
 };
 </script>
 
@@ -22,6 +24,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *,
@@ -38,6 +41,12 @@ html {
 .dark-red {
   color: $dark-red;
 }
+.red {
+  color: $red;
+}
+.block.light-grey {
+  background-color: $light-grey;
+}
 h1 {
   color: $blue;
   font-size: 60px;
@@ -49,6 +58,10 @@ button {
   background-color: $dark-red;
   color: white;
   border-radius: 5px;
+}
+button.small {
+  width: 160px;
+  height: 70px;
 }
 .block {
   width: 154px;
