@@ -59,6 +59,29 @@
         <button>join us</button>
       </div>
     </div>
+    <div class="numbers">
+      <div class="bg">
+        <img src="@/assets/img/Rectangle.png" alt="" />
+      </div>
+      <div class="title">
+        Excepteur sint occaecat cupidatat non proident sunt iculpa qui officia
+        deserunt
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="title">900+</div>
+          <p>Wykonanych zabiegów</p>
+        </div>
+        <div class="card">
+          <div class="title">12 515</div>
+          <p>Zadowolonych pacjentów</p>
+        </div>
+        <div class="card">
+          <div class="title">15</div>
+          <p>Lat doświadczenia</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -140,6 +163,42 @@ export default {};
     .title {
       font-size: 40px;
       font-weight: bold;
+    }
+  }
+}
+
+.numbers {
+  margin-top: 10vh;
+  position: relative;
+  color: white;
+  .bg {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      background-color: $blue;
+      opacity: 0.86;
+    }
+  }
+  .title {
+    font-size: 40px;
+    font-family: "poppins";
+    font-weight: bold;
+  }
+  .cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .card {
+      width: 300px;
+      color: white;
     }
   }
 }
