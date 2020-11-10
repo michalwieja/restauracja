@@ -47,9 +47,14 @@ html {
 .block.light-grey {
   background-color: $light-grey;
 }
+
 h1 {
   color: $blue;
   font-size: 60px;
+}
+.title {
+  font-size: 30px;
+  font-weight: bold;
 }
 button {
   width: 255px;

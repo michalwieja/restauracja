@@ -63,6 +63,7 @@ export default {
 
 <style scoped lang='scss'>
 footer {
+  margin-top: 10vh;
   position: absolute;
   background-color: #260000;
   height: 500px;
