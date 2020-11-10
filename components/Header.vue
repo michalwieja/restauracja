@@ -14,7 +14,7 @@
             <li><NuxtLink class="nav-link" to="/oferta">Oferta</NuxtLink></li>
             <li><NuxtLink class="nav-link" to="/galeria">Galeria</NuxtLink></li>
             <li><NuxtLink class="nav-link" to="/blog">Blog</NuxtLink></li>
-            <li><NuxtLink class="nav-link" to="/">Kontakt</NuxtLink></li>
+            <li><NuxtLink class="nav-link" to="/kontakt">Kontakt</NuxtLink></li>
           </ul>
         </nav>
       </div>
