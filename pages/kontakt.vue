@@ -35,10 +35,10 @@
           error sit voluptatem
         </p>
         <form>
-          <input type="text" />
-          <input type="text" />
-          <input type="text" />
-          <input type="text" />
+          <input type="text" placeholder="name" />
+          <input type="text" placeholder="Company" />
+          <input type="text" placeholder="Email" />
+          <input type="text" placeholder="Phone" />
           <button>Read More</button>
         </form>
       </div>
@@ -110,6 +110,8 @@ export default {};
         height: 70px;
         border-radius: 10px;
         border: none;
+        font-size: 22px;
+        padding: 10px;
       }
       button {
         width: 100%;
