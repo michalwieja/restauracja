@@ -21,7 +21,7 @@
           <div class="socials">IG FB W PR</div>
         </div>
         <div class="map">
-          <img src="@/assets/img/mask.png" alt="" />
+          <img src="@/assets/img/Mask.png" alt="" />
           <div class="block"></div>
         </div>
       </div>
