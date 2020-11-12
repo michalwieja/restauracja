@@ -1,0 +1,45 @@
+.que {
+  margin-top: 10vh;
+  display: flex;
+  align-items: center;
+  .content {
+    margin-right: 200px;
+  }
+  .img {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -100px;
+      left: 100px;
+      width: 100%;
+      height: 100%;
+      background-color: $light-grey;
+      z-index: -1;
+    }
+  }
+}
+.card {
+  width: 250px;
+}
+.blue {
+  .bg {
+    height: 405px;
+  }
+  .content {
+    height: 405px;
+    align-items: center;
+  }
+  button {
+    border: 1px solid white;
+    background: none;
+  }
+  .block {
+    position: relative;
+    height: 139px;
+    width: 97px;
+    top: 70px;
+    left: -50%;
+    background-color: $dark-red;
+  }
+}
